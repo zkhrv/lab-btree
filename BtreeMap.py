@@ -26,7 +26,7 @@ class btree_map: #Класс для ассациативного массива
         elif node.leaf: # если ключ является листом, возвращаем None
             return None
         else:
-            return self.Gget(key, node.children[i]) # если ключ не найден в данном узле, ищем его в следующем
+            return self.Ffind(key, node.children[i]) # если ключ не найден в данном узле, ищем его в следующем
 
     def AddElement(self, key, value):
         # Проверяем, есть ли корневой узел в дереве, иначе создаем новый объект узла, делаем его листом и добавляем ключ и значение
